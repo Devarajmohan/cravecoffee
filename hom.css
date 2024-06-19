@@ -1,0 +1,402 @@
+.btn,
+.footer,
+.footer .social-icons,
+.header,
+.slider .buttons,
+.slider .list,
+nav {
+    display: flex
+}
+
+.about,
+.ham-menu.active span,
+.header,
+body {
+    background-color: #fff
+}
+
+a,
+a:visited {
+    list-style-type: none;
+    text-decoration: none
+}
+
+.about h2,
+.off-screen-menu,
+h1 {
+    text-align: center
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+body {
+    overflow-x: hidden
+}
+
+.container1 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001
+}
+
+.fas.fa-user-alt {
+    font-size: 40px
+}
+
+.header {
+    width: 100%;
+    padding: 30px
+}
+
+.slider,
+.slider .list img {
+    width: 1300px;
+    max-width: 100vw
+}
+
+.slider {
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    height: 500px
+}
+
+.slider .list {
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: 1s
+}
+
+.slider .list img {
+    height: 100%;
+    object-fit: cover
+}
+
+.slider .buttons {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    justify-content: space-between
+}
+
+.slider .buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #fff;
+    border: none;
+    font-family: monospace;
+    font-weight: 700
+}
+
+.container {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: #fff
+}
+
+h1 {
+    padding-top: 3%;
+    padding-left: 15%;
+    color: #f5f3f3;
+    font-size: 3.5rem;
+    font-family: Orbitron, sans-serif;
+    font-weight: 500;
+    font-style: normal
+}
+
+.btn {
+    justify-content: center;
+    align-items: center
+}
+
+.btn button {
+    background: #080808;
+    color: #f3f0f0;
+    outline: 0;
+    border: none;
+    font-size: 2rem;
+    font-family: "Sedan SC", serif;
+    padding: 12px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 6px;
+    margin-left: 15%
+}
+
+.about h2 {
+    color: #000;
+    font-size: 3rem;
+    padding-top: 30px
+}
+
+a,
+a:visited {
+    color: #fff
+}
+
+.about p,
+.off-screen-menu {
+    flex-direction: column;
+    font-size: 2rem;
+    display: flex
+}
+
+.about p {
+    text-align: justify;
+    padding: 20px 5%;
+    letter-spacing: normal;
+    word-spacing: normal
+}
+
+a {
+    font-size: 40px
+}
+
+a:hover {
+    color: #f8f5f5
+}
+
+a:focus {
+    outline: 0
+}
+
+.off-screen-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.off-screen-menu li {
+    margin: 20px 0
+}
+
+.off-screen-menu {
+    background-color: #0f0f0f;
+    height: 50vh;
+    width: 100%;
+    max-width: 250px;
+    position: fixed;
+    top: 19%;
+    left: -100%;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    z-index: 1000;
+    border: 2px;
+    border-radius: 10px
+}
+
+.footer,
+.ham-menu {
+    position: relative
+}
+
+.off-screen-menu.active {
+    left: 50px
+}
+
+nav {
+    padding: 20px
+}
+
+.ham-menu {
+    height: 40px;
+    width: 35px;
+    margin-top: -10px;
+    margin-left: 1px
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #080808;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s
+}
+
+.ham-menu span:first-child {
+    top: 25%
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%
+}
+
+.ham-menu.active span:first-child {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg)
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg)
+}
+
+.footer {
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 20vh;
+    background-color: #000;
+    flex-direction: column;
+    justify-content: flex-end
+}
+
+@media screen and (max-width:767px) {
+    .about p,
+    .btn,
+    .off-screen-menu,
+    nav {
+        display: flex
+    }
+    .off-screen-menu,
+    h1 {
+        text-align: center;
+        font-size: 2rem
+    }
+    .slider {
+        width: 1300px;
+        max-width: 100vw;
+        height: 700px;
+        margin: auto;
+        position: relative;
+        overflow: hidden
+    }
+    .slider .buttons {
+        position: absolute;
+        top: 45%;
+        left: 5%;
+        width: 90%;
+        display: flex;
+        justify-content: space-between
+    }
+    .slider .buttons button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff5;
+        color: #fff;
+        border: none;
+        font-family: monospace;
+        font-weight: 700
+    }
+    .container {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        right: 10%;
+        color: #fff
+    }
+    h1 {
+        padding-top: 15%;
+        padding-left: 8%;
+        color: #f5f3f3;
+        font-family: Orbitron, sans-serif;
+        font-weight: 700;
+        font-style: normal
+    }
+    .btn {
+        justify-content: center;
+        align-items: center
+    }
+    .btn button {
+        background: #080808;
+        color: #f3f0f0;
+        outline: 0;
+        border: none;
+        font-size: 1.7rem;
+        font-family: "Sedan SC", serif;
+        padding: 10px 22px;
+        border-radius: 15px;
+        cursor: pointer;
+        font-weight: 400;
+        margin-top: 5%;
+        margin-left: 15%;
+        margin-right: 10%
+    }
+    .about p {
+        flex-direction: column;
+        font-size: 18px;
+        text-align: justify;
+        padding: 20px 5%;
+        letter-spacing: normal;
+        word-spacing: normal;
+        hyphens: auto
+    }
+    nav {
+        padding: 20px
+    }
+    .ham-menu {
+        height: 40px;
+        width: 30px;
+        margin-top: -10px;
+        margin-left: 1px;
+        position: relative
+    }
+    .container1 {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 1001
+    }
+    .fas.fa-user-alt {
+        font-size: 40px
+    }
+    .off-screen-menu {
+        background-color: #0f0f0f;
+        height: 40vh;
+        width: 100%;
+        max-width: 180px;
+        position: fixed;
+        top: 11%;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+        z-index: 1000;
+        border: 2px;
+        border-radius: 10px
+    }
+}
+
+.footer .copyright {
+    font-size: 17px;
+    color: #fff;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 10px
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: center
+}
+
+.footer .social-icons a {
+    align-items: center;
+    color: #f5f4f4;
+    margin: 0 10px
+}

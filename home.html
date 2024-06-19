@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crave Coffee - Organic Coffee Beans & Fresh Brews Delivered</title>
+    <meta name="description" content="Indulge in perfect coffee moments with our rich, top-quality beans, elevating your coffee experience.">
+    <meta name="keywords" content="coffee cravings best coffee coffee near me coffeee shop business">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="hom.css">
+</head>
+
+<body>
+    <section class="home" id="home">
+        <nav>
+            <div class="ham-menu" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </nav>
+        <div class="container1"><i class="fas fa-user-alt" style="font-size:30px;"></i></div>
+        <div class="off-screen-menu">
+            <ul>
+                <li><a href="#home" onclick="closeMenu()">Home</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="items.html" onclick="closeMenu()">Items</a></li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="list">
+                <div class="item"><img src="Cortado.webp" alt="coffee" title="coffee"></div>
+                <div class="item"><img src="Espresso.webp" alt="coffee" title="coffee"></div>
+                <div class="item"><img src="Latte.webp" alt="coffee" title="coffee"></div>
+                <div class="item"><img src="Americano.webp" alt="coffee" title="coffee"></div>
+            </div>
+            <div class="buttons"><button id="prev"><</button><button id="next">></button></div>
+            <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="container">
+                <h1>Craving the perfect cup of coffee at home</h1>
+                <div class="btn"><button onclick="window.location.href='items.html'" target="_blank">Buy</button></div>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <div class="content">
+            <p>Discover a vibrant blend of rich, aromatic coffee that delights the senses. Crafted from premium beans, each cup promises a smooth, satisfying taste. Whether you savor bold espressos or creamy lattes, our menu caters to every palate. Enjoy
+                our cozy atmosphere and friendly baristas, creating a welcoming space to unwind or work. With ethically sourced ingredients and sustainable practices, indulge guilt-free. Find your perfect brew that keeps you coming back. Satisfy your
+                coffee cravings today with our selection of espresso, latte, and sustainable coffee options. Visit us for the best coffee near you and enjoy a delightful experience at one of the top coffee shops in the area.</p>
+        </div>
+        <section class="items" id="items"></section>
+    </section>
+    <section class="footer">
+        <div class="social-icons"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+        <div class="copyright">
+            <p>&copy;2024CraveCoffee.AllRightsReserved.</p>
+        </div>
+    </section>
+    <script src="crav.js"></script>
+</body>
+
+</html>
