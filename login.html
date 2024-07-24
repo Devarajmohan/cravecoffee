@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Crave Coffee - Best Coffee shop</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://cravecoffee.in/">
+    <meta name="description" content="Discover the best coffee at our local coffee shop ,find every cup is perfection with beans and expert care.">
+    <meta name="keywords" content="coffee cravings best coffee coffee near me coffeee shop business">
+    <meta name="robots" content="index,follow">
+    <link rel="alternate" href="https://cravecoffee.in/" hreflang="en-cn" />
+    <link rel="alternate" href="https://cravecoffee.in/" hreflang="en-jp" />
+    <link rel="alternate" href="https://cravecoffee.in/" hreflang="en-gb" />
+    <link rel="alternate" href="https://cravecoffee.in/" hreflang="en-us" />
+    <link rel="alternate" href="https://cravecoffee.in/" hreflang="en-ae" />
+    <link rel="alternate" href="https://cravecoffee.in/" hreflang="en-au" />
+    <link rel="alternate" href="https://cravecoffee.in/" hreflang="en-pk" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DLJ07F6G1G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DLJ07F6G1G');
+    </script>
+    <style media="screen">
+        *,
+        *:before,
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: #f0f0f1;
+        }
+        
+        form {
+            height: 520px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.13);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            padding: 50px 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        form * {
+            font-family: 'Poppins', sans-serif;
+            color: #080808;
+            letter-spacing: 0.5px;
+            outline: none;
+            border: none;
+        }
+        
+        form h3 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+        }
+        
+        label {
+            display: block;
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        input {
+            display: block;
+            height: 190px;
+            width: 100%;
+            background-color: rgba(124, 77, 77, 0.07);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        
+         ::placeholder {
+            color: #0f0f0f;
+        }
+        
+        button {
+            margin-top: 30px;
+            width: 100%;
+            background-color: #3b3838;
+            color: #f4f4f5;
+            padding: 15px 0;
+            font-size: 18px;
+            font-weight: 400;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .social {
+            margin-top: 30px;
+            display: flex;
+        }
+        
+        .social div {
+            width: 150px;
+            border-radius: 3px;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .social .google {
+            background-color: #db4437;
+        }
+        
+        .social .google:hover {
+            background-color: #c33d2e;
+        }
+        
+        .social .facebook {
+            background-color: #3b5998;
+            margin-left: 25px;
+        }
+        
+        .social .facebook:hover {
+            background-color: #334d84;
+        }
+        
+        .social i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="loginForm" onsubmit="saveLoginData(event)">
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" required>
+
+        <button type="submit">Log In</button>
+        <div class="social">
+            <div class="google"><i class="fab fa-google"></i> Google</div>
+            <div class="facebook"><i class="fab fa-facebook"></i> Facebook</div>
+        </div>
+    </form>
+
+    <script>
+        function saveLoginData(event) {
+            event.preventDefault(); // Prevent form submission
+
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Retrieve existing users from local storage or initialize an empty array
+            var users = JSON.parse(localStorage.getItem('users')) || [];
+
+            // Add new user to the array
+            users.push({
+                username: username,
+                password: password
+            });
+
+            // Save updated array to local storage
+            localStorage.setItem('users', JSON.stringify(users));
+
+            // Show success message
+            var form = document.getElementById('loginForm');
+            form.innerHTML = '<h3>Login Successfully</h3>';
+            form.style.textAlign = 'center';
+            form.style.color = '#080808';
+            form.style.padding = '50px 35px';
+            form.style.backgroundColor = 'rgba(255, 255, 255, 0.13)';
+            form.style.border = '2px solid rgba(255, 255, 255, 0.1)';
+            form.style.boxShadow = '0 0 40px rgba(8, 7, 16, 0.6)';
+            form.style.borderRadius = '10px';
+        }
+    </script>
+</body>
+
+</html>
