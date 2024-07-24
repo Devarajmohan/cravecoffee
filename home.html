@@ -3,82 +3,788 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crave Coffee - Best Coffee shop</title>
-    <link rel="canonical" href="https://cravecoffee.in/">
-    <meta name="description" content="Discover the best coffee at our local coffee shop ,find every cup is perfection with beans and expert care.">
-    <meta name="keywords" content="coffee cravings best coffee coffee near me coffeee shop business">
-    <meta name="robots" content="index,follow">
-    <link rel="alternate" href="https://cravecoffee.in/" hreflang="en-cn"/>
-<link rel="alternate" href="https://cravecoffee.in/" hreflang="en-jp"/>
-<link rel="alternate" href="https://cravecoffee.in/" hreflang="en-gb"/>
-<link rel="alternate" href="https://cravecoffee.in/" hreflang="en-us"/>
-<link rel="alternate" href="https://cravecoffee.in/" hreflang="en-ae"/>
-<link rel="alternate" href="https://cravecoffee.in/" hreflang="en-au"/>
-<link rel="alternate" href="https://cravecoffee.in/" hreflang="en-pk"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="hom.css">
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DLJ07F6G1G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-DLJ07F6G1G');
-</script>
+    <!-- 
+    - primary meta tags
+  -->
+    <title>cravecoffee</title>
+    <meta name="title" content="Keofi - Great coffee good vibes">
+    <meta name="description" content="This is a coffee shop html template made by codewithsadee">
+
+    <!-- 
+    - favicon
+  -->
+
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="hom.css">
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="48x48">
+    <!-- Optional: Add multiple sizes -->
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon-48x48.png" sizes="48x48">
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Oswald:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- 
+    - preload images
+  -->
+
+
 </head>
 
 <body>
-    <section class="home" id="home">
-        <nav>
-            <div class="ham-menu" onclick="toggleMenu()"><span></span><span></span><span></span></div>
-        </nav>
-        <div class="container1"><i class="fas fa-user-alt" style="font-size:30px;"></i></div>
-        <div class="off-screen-menu">
-            <ul>
-                <li><a href="#home" onclick="closeMenu()">Home</a></li>
-                <li><a href="#about" onclick="closeMenu()">About</a></li>
-                <li><a href="items.html" onclick="closeMenu()">Items</a></li>
-            </ul>
-        </div>
-        <div class="slider">
-            <div class="list">
-                <div class="item"><img src="Cortado.webp" alt="coffee" title="coffee"></div>
-                <div class="item"><img src="Espresso.webp" alt="coffee" title="coffee"></div>
-                <div class="item"><img src="Latte.webp" alt="coffee" title="coffee"></div>
-                <div class="item"><img src="Americano.webp" alt="coffee" title="coffee"></div>
-            </div>
-            <div class="buttons"><button id="prev"><</button><button id="next">></button></div>
-            <ul class="dots">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header">
+
+        <div class="header-top">
             <div class="container">
-                <h1>Craving the perfect cup of coffee at home</h1>
-                <div class="btn"><button onclick="window.location.href='items.html'" target="_blank">Buy</button></div>
+
+                <p class="header-top-text">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                    <span class="span">Opening Hours :</span> 10:00 Am - 10:00 Pm
+                </p>
+
             </div>
         </div>
-    </section>
-    <section class="about" id="about">
-        <h2>About Us</h2>
-        <div class="content">
-            <p>Discover a vibrant blend of rich, aromatic coffee that delights the senses. Crafted from premium beans, each cup promises a smooth, satisfying taste. Whether you savor bold espressos or creamy lattes, our menu caters to every palate. Enjoy
-                our cozy atmosphere and friendly baristas, creating a welcoming space to unwind or work. With ethically sourced ingredients and sustainable practices, indulge guilt-free. Find your perfect brew that keeps you coming back. Satisfy your
-                coffee cravings today with our selection of espresso, latte, and sustainable coffee options. Visit us for the best coffee near you and enjoy a delightful experience at one of the top coffee shops in the area.</p>
+
+        <div class="header-bottom" data-header>
+            <div class="container">
+
+                <a href="#" class="logo">
+                    <h1 style="color: hsl(30, 17%, 95%);"><span style="color: hsl(27, 34%, 58%);">crave</span>coffee</h1>
+                </a>
+
+                <nav class="navbar" data-navbar>
+
+                    <ul class="navbar-list">
+
+                        <li>
+                            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#about" class="navbar-link" data-nav-link>About</a>
+                        </li>
+
+                        <li>
+                            <a href="#menu" class="navbar-link" data-nav-link>Menu</a>
+                        </li>
+
+                        <li>
+                            <a href="login.html" class="navbar-link" data-nav-link>Login</a>
+                        </li>
+
+                        <li>
+                            <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
+                        </li>
+
+                    </ul>
+
+                    <a href="pagenot.html" class="btn btn-primary">Book A table</a>
+
+                </nav>
+
+                <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="span"></span>
+          <span class="span"></span>
+          <span class="span"></span>
+
+        </button>
+
+            </div>
         </div>
-        <section class="items" id="items"></section>
-    </section>
-    <section class="footer">
-        <div class="social-icons"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-youtube"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
-        <div class="copyright">
-            <p>&copy;2024CraveCoffee.AllRightsReserved.</p>
+
+    </header>
+
+
+
+
+
+    <main>
+        <article>
+
+            <!-- 
+        - #HERO
+      -->
+
+            <section class="section hero has-bg-image" id="home" aria-labelledby="hero-label">
+                <div class="container">
+                    <p class="section-subtitle has-before reveal-left" data-reveal>Welcome to the crave coffee</p>
+                    <h2 class="h1 hero-title reveal-left" id="hero-label" data-reveal>Best Coffee Good Vibes</h2>
+
+                    <div class="btn-group reveal-left" data-reveal>
+                        <a href="#" class="btn btn-primary">
+                            <span class="span">Explore more</span>
+                            <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                        <a href="pagenot.html" class="btn btn-secondary">
+                            <span class="span">Get delivery</span>
+                            <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+            <!-- 
+        - #ABOUT
+      -->
+
+            <section class="section about" id="about" aria-labelledby="about-label">
+                <div class="container">
+
+                    <div class="about-content">
+
+                        <p class="section-subtitle reveal-left" id="about-label" data-reveal style="font-size: 30px;">About Us</p>
+
+                        <h2 class="h2 section-title reveal-left" data-reveal style="color: black;">Organic & Fresh Coffee Provider Center</h2>
+
+                        <p class="section-text reveal-left" data-reveal style="color: black;">
+                            Discover a vibrant blend of rich, aromatic coffee that delights the senses. Crafted from premium beans, each cup promises a smooth, satisfying taste. Whether you savor bold espressos or creamy lattes, our menu caters to every palate. Enjoy our cozy atmosphere
+                            and friendly baristas, creating a welcoming space to unwind or work. With ethically sourced ingredients and sustainable practices, indulge guilt-free. Find your perfect brew that keeps you coming back. Satisfy your coffee cravings
+                            today with our selection of espresso, latte, and sustainable coffee options. Visit us for the best coffee near you and enjoy a delightful experience at one of the top coffee shops in the area.</p>
+
+
+
+                    </div>
+
+                    <figure class="about-banner reveal-right" data-reveal>
+                        <img src="about-banner.png" width="686" height="544" loading="lazy" alt="about banner" class="w-100">
+                    </figure>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #SERVICE
+      -->
+
+
+
+            <section class="section feature" aria-labelledby="feature-label">
+                <div class="container">
+
+                    <figure class="feature-banner img-holder reveal-left" style="--width: 560; --height: 700;" data-reveal>
+                        <img src="service-3.jpg" width="560" height="700" loading="lazy" alt="feature banner" class="img-cover">
+                    </figure>
+
+                    <div class="feature-content">
+
+                        <p class="section-subtitle reveal-right" data-reveal style="font-size: 30px;"> HOW TO MAKE A COFFEE</p>
+
+                        <h2 class="h2 section-title reveal-right" id="feature-label" data-reveal style="color: black;">Enjoy a perfect cup of coffee made effortlessly
+                        </h2>
+
+
+
+                        <ul class="feature-list">
+
+
+
+                            <li style="padding-top: 20px;">
+                                <div class="feature-card reveal-right" data-reveal>
+
+                                    <div class="card-icon">
+                                        <img src="feature-icon-2.png" width="70" height="70" loading="lazy" alt="feature icon">
+                                    </div>
+
+                                    <div>
+                                        <h3 class="h3 card-title" style="color: black;">Step-1</h3>
+
+                                        <p class="card-text" style="color: black;">
+                                            Heat water it reaches just below boiling around 200°F or 93°C.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-card reveal-right" data-reveal>
+
+                                    <div class="card-icon">
+                                        <img src="feature-icon-2.png" width="70" height="70" loading="lazy" alt="feature icon">
+                                    </div>
+
+                                    <div>
+                                        <h3 class="h3 card-title" style="color: black;">Step-2</h3>
+
+                                        <p class="card-text" style="color: black;">
+                                            Grind fresh coffee beans to a medium coarseness.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-card reveal-right" data-reveal>
+
+                                    <div class="card-icon">
+                                        <img src="feature-icon-2.png" width="70" height="70" loading="lazy" alt="feature icon">
+                                    </div>
+
+                                    <div>
+                                        <h3 class="h3 card-title" style="color: black;">Step-3</h3>
+
+                                        <p class="card-text" style="color: black;">
+                                            Place the coffee grounds in a filter or coffee maker and pour hot water evenly over them.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-card reveal-right" data-reveal>
+
+                                    <div class="card-icon">
+                                        <img src="feature-icon-2.png" width="70" height="70" loading="lazy" alt="feature icon">
+                                    </div>
+
+                                    <div>
+                                        <h3 class="h3 card-title" style="color: black;">Step-4</h3>
+
+                                        <p class="card-text" style="color: black;">
+                                            Allow the coffee to steep or brew for about 4 minutes to extract flavors.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-card reveal-right" data-reveal>
+
+                                    <div class="card-icon">
+                                        <img src="feature-icon-2.png" width="70" height="70" loading="lazy" alt="feature icon">
+                                    </div>
+
+                                    <div>
+                                        <h3 class="h3 card-title" style="color: black;">Step-5</h3>
+
+                                        <p class="card-text" style="color: black;">
+                                            Pour the brewed coffee into your favorite mug and enjoy your freshly made cup of coffee!
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        <a href="#" class="btn btn-primary reveal-right" data-reveal>
+                            <span class="span">Explore More</span>
+
+                            <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                        </a>
+
+                    </div>
+
+
+                    <img src="feature-abs-3.png" width="262" height="356" loading="lazy" alt="" class="abs-img abs-img-2">
+
+                    <img src="feature-abs-3.png" width="410" height="212" loading="lazy" alt="" class="abs-img abs-img-3">
+
+                </div>
+            </section>
+
+
+            <!-- 
+        - #MENU
+      -->
+
+            <section class="section menu has-bg-image" id="menu" aria-labelledby="menu-label">
+                <div class="container">
+
+                    <p class="section-subtitle text-center" data-reveal style="font-size: 25px;">Choose Best Coffee</p>
+
+                    <h2 class="h2 section-title text-center" id="menu-label" data-reveal style="color: black;">
+                        Popular Coffee Menu
+                    </h2>
+
+                    <ul class="grid-list" style="background-image: url('menu-bg-logo.png')">
+
+                        <li>
+                            <div class="menu-card" data-reveal>
+
+                                <figure class="card-banner img-holder" style="--width: 200; --height: 200;">
+                                    <img src="menu-1.jpg" width="200" height="200" loading="lazy" alt="Americano Coffee" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">Americano Coffee</h3>
+
+                                    <p class="card-text">
+                                        2/3 espresso, 1/3 streamed milk
+                                    </p>
+
+                                    <data class="card-price has-before" value="4.9">-$4.9-</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="menu-card" data-reveal>
+
+                                <figure class="card-banner img-holder" style="--width: 200; --height: 200;">
+                                    <img src="menu-2.jpg" width="200" height="200" loading="lazy" alt="Espresso Coffee" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">Espresso Coffee</h3>
+
+                                    <p class="card-text">
+                                        2/3 espresso, 1/3 streamed milk
+                                    </p>
+
+                                    <data class="card-price has-before" value="4.9">-$4.9-</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="menu-card" data-reveal>
+
+                                <figure class="card-banner img-holder" style="--width: 200; --height: 200;">
+                                    <img src="menu-3.jpg" width="200" height="200" loading="lazy" alt="Barista Pouring Syrup" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">Barista Pouring Syrup</h3>
+
+                                    <p class="card-text">
+                                        2/3 espresso, 1/3 streamed milk
+                                    </p>
+
+                                    <data class="card-price has-before" value="3.5">-$3.5-</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="menu-card" data-reveal>
+
+                                <figure class="card-banner img-holder" style="--width: 200; --height: 200;">
+                                    <img src="menu-4.jpg" width="200" height="200" loading="lazy" alt="Cold - Coffee" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">Cold - Coffee</h3>
+
+                                    <p class="card-text">
+                                        2/3 espresso, 1/3 streamed milk
+                                    </p>
+
+                                    <data class="card-price has-before" value="6.0">-$6.0-</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="menu-card" data-reveal>
+
+                                <figure class="card-banner img-holder" style="--width: 200; --height: 200;">
+                                    <img src="menu-5.jpg" width="200" height="200" loading="lazy" alt="Cappuccino Arabica" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">Cappuccino Arabica</h3>
+
+                                    <p class="card-text">
+                                        2/3 espresso, 1/3 streamed milk
+                                    </p>
+
+                                    <data class="card-price has-before" value="2.8">-$2.8-</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="menu-card" data-reveal>
+
+                                <figure class="card-banner img-holder" style="--width: 200; --height: 200;">
+                                    <img src="menu-6.jpg" width="200" height="200" loading="lazy" alt="Milk Cream Coffee" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">Milk Cream Coffee</h3>
+
+                                    <p class="card-text">
+                                        2/3 espresso, 1/3 streamed milk
+                                    </p>
+
+                                    <data class="card-price has-before" value="7.5">-$7.5-</data>
+
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #FEATURE
+      -->
+
+            <section class="section feature" aria-labelledby="feature-label">
+                <div class="container">
+
+                    <figure class="feature-banner img-holder reveal-left" style="--width: 560; --height: 700;" data-reveal>
+                        <img src="feature-banner.jpg" width="560" height="700" loading="lazy" alt="feature banner" class="img-cover">
+                    </figure>
+
+                    <div class="feature-content">
+
+                        <p class="section-subtitle reveal-right" data-reveal style="font-size: 30px;">Why Choose Us</p>
+
+                        <h2 class="h2 section-title reveal-right" id="feature-label" data-reveal style="color: black;">New London Coffee Founded For Extraordinary Test
+                        </h2>
+
+                        <p class="section-text reveal-right" data-reveal style="color: black;">
+                            Experience the rich flavor of our natural coffee beans, certified with ISO standards for quality and sustainability. Enjoy premium coffee that meets top industry standards and delivers exceptional taste in every cup.
+                        </p>
+
+                        <ul class="feature-list">
+
+                            <li>
+                                <div class="feature-card reveal-right" data-reveal>
+
+                                    <div class="card-icon">
+                                        <img src="feature-icon-1.png" width="70" height="70" loading="lazy" alt="feature icon">
+                                    </div>
+
+                                    <div>
+                                        <h3 class="h3 card-title" style="color: black;">Natural Coffee Beans</h3>
+
+                                        <p class="card-text" style="color: black;">
+                                            Beans are harvested and processed without synthetic chemicals. The beans are dried naturally, preserving their rich, authentic flavors.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="feature-card reveal-right" data-reveal>
+
+                                    <div class="card-icon">
+                                        <img src="feature-icon-2.png" width="70" height="70" loading="lazy" alt="feature icon">
+                                    </div>
+
+                                    <div>
+                                        <h3 class="h3 card-title" style="color: black;">100% ISO Certification</h3>
+
+                                        <p class="card-text" style="color: black;">
+                                            Our coffee beans are 100% ISO certified, guaranteeing premium quality and adherence to international standards.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        <a href="#" class="btn btn-primary reveal-right" data-reveal>
+                            <span class="span">Explore More</span>
+
+                            <ion-icon name="chevron-forward" aria-hidden="true"></ion-icon>
+                        </a>
+
+                    </div>
+
+
+                    <img src="feature-abs-2.png" width="262" height="356" loading="lazy" alt="" class="abs-img abs-img-2">
+
+                    <img src="feature-abs-3.png" width="410" height="212" loading="lazy" alt="" class="abs-img abs-img-3">
+
+                </div>
+            </section>
+
+
+
+
+
+            <!-- 
+        - #BLOG
+      -->
+
+            <section class="section blog" id="blog" aria-labelledby="blog-label">
+                <div class="container">
+
+                    <p class="section-subtitle text-center" data-reveal style="font-size: 30px;">Get Single Update</p>
+
+                    <h2 class="h2 section-title text-center" id="blog-label" data-reveal>
+                        Read Some Blogs
+                    </h2>
+
+                    <ul class="grid-list">
+
+                        <li>
+                            <a href="https://en.wikipedia.org/wiki/History_of_coffee" class="blog-card has-before" data-reveal target="_blank">
+
+                                <figure class="card-banner">
+                                    <img src="blog-1.jpg" width="670" height="450" loading="lazy" alt="SWR React Hooks With Next Increm Ental Static Regeneration" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">History of coffee</h3>
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.healthline.com/nutrition/top-evidence-based-health-benefits-of-coffee" class="blog-card has-before" data-reveal target="_blank">
+
+                                <figure class="card-banner">
+                                    <img src="blog-2.jpg" width="670" height="450" loading="lazy" alt="Decisions For Building Flexible Components DevTools Browser" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">Benefits of coffee</h3>
+
+
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://en.wikipedia.org/wiki/Coffee_bean" class="blog-card has-before" data-reveal target="_blank">
+
+                                <figure class="card-banner">
+                                    <img src="blog-3.jpg" width="670" height="450" loading="lazy" alt="SWR React Hooks With Next Increm Ental Static Regeneration" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h3 card-title">About coffee beans</h3>
+
+
+
+                                </div>
+
+                            </a>
+                        </li>
+
+                    </ul>
+
+
+
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+        </article>
+    </main>
+
+
+
+
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer" id="footer">
+        <div class="container">
+
+            <div class="footer-top section" data-reveal>
+
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <p style="font-size: 4rem; display: flex;"><span style="color:hsl(27, 34%, 58%) ;">crave</span>coffee</p>
+                    </a>
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Working Hours</p>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <p>Sunday - Friday</p>
+
+                        <span class="span">10:00 am - 10:00pm</span>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <p>Only Friday</p>
+
+                        <span class="span">12:00 pm - 09:00pm</span>
+                    </li>
+
+                    <li>
+                        <strong class="strong">Saturday Close</strong>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Contact Us</p>
+                    </li>
+
+                    <li>
+                        <div class="wrapper">
+
+                            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+
+
+                            <div>
+                                <span class="span">Location :</span>
+
+                                <p>513 Town Street, India</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="wrapper">
+                            <ion-icon name="mail-unread-outline" aria-hidden="true"></ion-icon>
+
+                            <div>
+                                <span class="span">Email Address :</span>
+
+                                <p>cravecoffee@gmail.com</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="wrapper">
+                            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+
+                            <div>
+                                <span class="span">Phone Number :</span>
+
+                                <p>+91 9344794359</p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">social-link</p>
+                    </li>
+
+                    <li>
+                        <ul class="social-list">
+
+                            <li>
+                                <a href="https://www.instagram.com/_lusifer_dev?igsh=MW9ycGV0NzZveXJzYg==" class="social-link" target="_blank">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/_lusifer_dev?igsh=MW9ycGV0NzZveXJzYg==" class="social-link" target="_blank">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/_lusifer_dev?igsh=MW9ycGV0NzZveXJzYg==" class="social-link" target="_blank">
+                                    <ion-icon name="logo-instagram"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.instagram.com/_lusifer_dev?igsh=MW9ycGV0NzZveXJzYg==" class="social-link" target="_blank">
+                                    <ion-icon name="logo-google"></ion-icon>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p class="copyright">
+                    Copyright © 2024 cravecoffee.in. All Rights Reserved.<br> <a href="https://www.instagram.com/_lusifer_dev?igsh=MW9ycGV0NzZveXJzYg==" class="social-link" target="_blank">Designed By DEVA </a><br>
+                </p>
+
+
+            </div>
+
         </div>
-    </section>
+    </footer>
+
+
+
+
+
+    <!-- 
+    - custom js link
+  -->
     <script src="crav.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
