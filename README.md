@@ -44,7 +44,7 @@ I worked as the **Fullstack Developer** and owned the project end-to-end:
 - **Understanding user and business goals**  
 - **Planning site architecture and navigation**  
 - **Designing a mobile-first UI**  
-- **Implementing the frontend in React**  
+- **Implementing the frontend**  
 - **Building backend APIs**  
 - **Integrating SQL and NoSQL data storage**  
 - **Applying SEO and performance improvements**  
@@ -53,7 +53,7 @@ I worked as the **Fullstack Developer** and owned the project end-to-end:
 This included multiple review cycles to ensure the platform met **brand and business expectations**.
 
 **Tech Stack:** 
-- **React** – For dynamic, reusable UI components  
+
 - **HTML5, CSS3, ES6 JavaScript** – Page structure, styling, and interactivity  
 - **Node.js + Express.js** – Backend routing and services  
 - **Java** – Business logic and secure backend processing  
@@ -77,7 +77,7 @@ The biggest challenge was improving:
 ### How I Solved It
 
 #### 1️⃣ Mobile-First UI
-- Built flexible **React components** with CSS breakpoints to ensure consistency across screen sizes.
+- Built flexible with CSS breakpoints to ensure consistency across screen sizes.
 
 #### 2️⃣ Scalable Backend
 - Developed **REST APIs** with **Node.js** and **Java**  
@@ -103,7 +103,7 @@ These results directly supported **business growth and digital visibility**.
 **What I Learned:** 
 This project helped me strengthen: 
 - **Fullstack architecture design**  
-- **Writing SEO-friendly** and high-performance React applications  
+- **Writing SEO-friendly** and high-performance applications  
 - **Balancing brand identity** with performance and technical requirements  
 - **Delivering projects focused** on measurable business KPIs
 
