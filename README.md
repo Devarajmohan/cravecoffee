@@ -10,7 +10,12 @@ customer inquiries.
 **Problem:** 
 When **CraveCoffee** approached me, they were facing multiple challenges with their existing online presence.
 
-<img width="2100" height="9570" alt="c1 (1)" src="https://github.com/user-attachments/assets/fb51a4a9-51fd-40f1-b88b-0e75603d0a8d" />
+<img 
+  src="https://github.com/user-attachments/assets/fb51a4a9-51fd-40f1-b88b-0e75603d0a8d" 
+  alt="c1 (1)"
+  width="100%" 
+/>
+
 
 
 ### Key Challenges
