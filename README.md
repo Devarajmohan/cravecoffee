@@ -1,6 +1,6 @@
 # [Cravecoffee](https://cravecoffee.netlify.app/)
 
-# Project Name: CraveCoffee – Responsive & SEO-Optimized Coffee Brand Website 
+# Project Name: CraveCoffee – Responsive & SEO-Optimized Coffee Brand Website     
 
 **One-Line Summary:** 
 I redesigned and rebuilt CraveCoffee’s website into a fully responsive, SEO-optimized, 
